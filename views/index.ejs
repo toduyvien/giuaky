@@ -1,0 +1,16 @@
+<a href="/add">Them moi</a>
+<%AllSinhVien.forEach(SinhVien => {%>
+
+    <h1>
+        <%= SinhVien.masinhvien%>
+    </h1>
+    <p>
+        <%=SinhVien.ten %>
+    </p>
+    <p>
+        <%= SinhVien.sdt %>
+    </p>
+    <img src="<%= SinhVien.avatar%>" height="300px" width="300px">
+    <a href="/delete/<%=SinhVien.masinhvien %>" type="button">Delete</a>
+    <a href="/edit/<%=SinhVien.masinhvien %>" type="button">Edit</a>
+    <%}); %>
